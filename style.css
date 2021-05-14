@@ -1,0 +1,236 @@
+:root {
+  --darkred-color: rgb(173, 0, 40);
+  --lightgrey-color: #f5f8fa;
+  --roboto-font: "Roboto", sans-serif;
+}
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+body,
+html {
+  font-family: var(--roboto-font);
+}
+
+/* CLASS */
+.color-text-highlight {
+  color: var(--darkred-color);
+}
+.color-text {
+  color: #909090;
+}
+.title-page {
+  color: #444;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.title-page:hover {
+  color: #444;
+}
+.title-section {
+  font-size: 50px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+}
+.places_cover {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+/* HEADER */
+
+#header {
+  background-image: url("./images/bg-baner.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.main-menu li {
+  display: inline-block;
+  padding: 30px 20px;
+}
+.main-menu li:hover {
+  background-color: var(--darkred-color);
+}
+.main-menu li a {
+  color: #fff;
+}
+#header .row {
+  align-items: center;
+  justify-content: space-around;
+}
+#header h1 {
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.search-box {
+  height: 75px;
+  width: 1110px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fafafa;
+  opacity: 0.5;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80%;
+  align-items: center;
+  border-radius: 50px;
+}
+.search-box input {
+  width: 100%;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border: unset;
+}
+.btn-submit {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #ad0028 !important;
+}
+
+/* ITEM OFFERS */
+.best_offers {
+  padding: 45px 0;
+}
+.box-item {
+  box-shadow: 0 4px 16px -2px rgb(0 0 0 / 10%), 0 0 0 1px rgb(0 0 0 / 2%);
+}
+.box-img {
+  overflow: hidden;
+}
+.box-img img {
+  width: 100%;
+  transition: 0.7s;
+  transform: scale(1.2);
+}
+.highlight-offer {
+  font-size: 25px;
+  font-weight: bold;
+}
+.flex-ofer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-content {
+  padding: 20px;
+}
+.box-content p {
+  color: #909090;
+}
+.box-content img {
+  width: 15px;
+}
+.box-item:hover {
+  box-shadow: 0 9px 16px -2px rgb(0 0 0 / 10%), 0 0 0 1px rgb(0 0 0 / 2%);
+}
+.box-item:hover .box-img img {
+  transform: scale(1);
+}
+
+/* section-2 */
+.section-2 {
+  padding: 50px 0;
+  background-color: var(--lightgrey-color);
+}
+.item-offers-type2 {
+  height: 400px;
+  position: relative;
+}
+.item-offers-type2 img {
+  width: 100%;
+  height: 100%;
+}
+.content-offers-type2 {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  color: #fff;
+}
+.content-offers-type2 h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.content-offers-type2 h2 a {
+  color: #fff;
+}
+.content-offers-type2 span {
+  background-color: var(--darkred-color);
+  display: inline-block;
+  padding: 5px 30px;
+}
+.places_cover:hover {
+  opacity: 0;
+}
+
+.news {
+  padding: 50px 0;
+}
+
+.subscribe {
+  padding: 80px 0;
+  background-color: var(--lightgrey-color);
+}
+
+.newsletter {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+.newsletter input {
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.02) !important;
+}
+.newsletter input[type="email"] {
+  font-size: 13px;
+  padding: 10px 0 10px 10px;
+  color: #909090;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+.newsletter_input {
+  height: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #ad0028;
+  width: 25%;
+  border-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  padding: 0;
+  font-size: 15px;
+}
+.newsletter_form {
+  width: 75%;
+  height: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
