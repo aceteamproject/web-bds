@@ -209,4 +209,73 @@ a{
 .listing_detail {
     padding: 3px 0;
     font-size: 13px;
+    line-height: 22px;
+}
+.acodion-item h4 i{
+    float: right;
+}
+#prop_ame .listing_detail i{
+    margin-right: 10px;
+}
+#list-social{
+    background-color: white;
+    padding: 20px;
+}
+.widget-title-sidebar {
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+    color: #444;
+    padding: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.widget-title-sidebar:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ededed;
+    display: block;
+    margin-top: 10px;
+}
+.social_sidebar_internal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social_sidebar_internal a i{
+    border: 1px solid #ededed;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 4px;
+}
+.fa-facebook{
+    color:#3b5999;
+}
+.social_sidebar_internal .fa-facebook:hover{
+    background-color: #3b5999;
+    color: white;
+}
+.fa-google{
+    color:#dd4b39;
+}
+.social_sidebar_internal .fa-google:hover{
+    background-color: #dd4b39;
+    color: white;
+}
+.fa-linkedin{
+    color:#0077b5;
+}
+.social_sidebar_internal .fa-linkedin:hover{
+    background-color: #0077b5;
+    color: white;
+}
+.fa-pinterest{
+    color:#bd081c;
+}
+.social_sidebar_internal .fa-pinterest:hover{
+    background-color: #bd081c;
+    color: white;
 }
