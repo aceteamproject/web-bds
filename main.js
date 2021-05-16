@@ -30,3 +30,20 @@ $(window).scroll(function () {
 $(".scroll-ontop").on("click", function () {
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
+
+// SLICK SLIDER
+$(".content_slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: true,
+  asNavFor: ".img_control",
+});
+$(".img_control").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  asNavFor: ".content_slider",
+  focusOnSelect: true,
+});

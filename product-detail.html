@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bf44431dac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link rel="stylesheet" href="product-detai.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,264 +20,335 @@
 <body>
     <header>
         <div id="header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="logo col-2">
-                        <img src="./images/logomilano.png" alt="logo">
+            <div class="sticky-menu">
+                <div class="container header-mb">
+                    <div class="d-flex row-header">
+                        <div class="logo col-2 col-md-3">
+                            <img src="./images/logomilano.png" alt="logo">
+                        </div>
+                        <ul class="main-menu col-8 main-menu-pc">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">DEMOS</a></li>
+                            <li><a href="#">Our Listings</a></li>
+                            <li><a href="#">Meet the team</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Features</a></li>
+                        </ul>
+                        <div class="block col-2">
+                            <i class="fas fa-bars block-mb"></i>
+                        </div>
+                        <ul class="main-menu col-8 main-menu-mobile">
+                            <li class="p-0 not-hover">
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="text-center border-mb"><a href="#">HOME</a></li>
+                            <li class="text-center border-mb"><a href="#">DEMOS</a></li>
+                            <li class="text-center border-mb"><a href="#">Our Listings</a></li>
+                            <li class="text-center border-mb"><a href="#">Meet the team</a></li>
+                            <li class="text-center border-mb"><a href="#">Blog</a></li>
+                            <li class="text-center border-mb"><a href="#">Features</a></li>
+                        </ul>
                     </div>
-                    <ul class="main-menu col-5">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">DEMOS</a></li>
-                        <li><a href="#">Our Listings</a></li>
-                        <li><a href="#">Meet the team</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Features</a></li>
-                    </ul>
-                    <div class="block col-2"></div>
                 </div>
             </div>
             <h1>Do More width wp estage</h1>
 
-            <div class="search-box">
-                <div class="col-6">
-                    <input type="text">
-                </div>
-                <div class="col-2">
-                    <input type="text">
-                </div>
-                <div class="col-2">
-                    <input type="text">
-                </div>
-                <div class="col-2">
-                    <input type="text" class="btn-submit" value="SEARCH">
+            <div class="search-box container">
+                <div class="search_wrapper_color"></div>
+                <div class="d-flex search-row">
+                    <div class="col-12 col-lg-6 mb-20">
+                        <input type="text" placeholder="Tìm kiếm">
+                    </div>
+                    <div class="col-6 col-lg-2 mb-20">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Types</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-20">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Actions</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 text-center">
+                        <input type="submit" class="btn-submit" value="SEARCH">
+                    </div>
                 </div>
             </div>
+
         </div>
     </header>
     <div id="product-detail">
-        <div class="section-1">
-            <div class="breadcumb">
-                <a href="https://milano.wpestatetheme.org/listings/villas/" rel="tag">Villas</a>
-                /
-                <a href="https://milano.wpestatetheme.org/action/sales/" rel="tag">Sales</a>
-            </div>
-            <div class="title-zones">
-                <div class="title-area">
-                    <h1 class="title">Classic Italian Villa</h1>
-                    <div class="notice-area">
-                        <i class="fas fa-flag"></i>
-                        Via Orefici, Milano, Centro Storico
+        <div class="container">
+            <div class="section-1">
+                <div class="breadcumb">
+                    <a href="https://milano.wpestatetheme.org/listings/villas/" rel="tag">Villas</a>
+                    /
+                    <a href="https://milano.wpestatetheme.org/action/sales/" rel="tag">Sales</a>
+                </div>
+                <div class="title-zones">
+                    <div class="title-area">
+                        <h1 class="title">Classic Italian Villa</h1>
+                        <div class="notice-area">
+                            <i class="fas fa-flag"></i>
+                            Via Orefici, Milano, Centro Storico
+                        </div>
+                    </div>
+                    <div class="price-area">
+                        <span class="price-label">from</span>
+                        <span class="price-main font-weight-bold">$2100</span>
+                        <span class="price-label">/month</span>
                     </div>
                 </div>
-                <div class="price-area">
-                    <span class="price-label">from</span>
-                    <span class="price-main font-weight-bold">$2100</span>
-                    <span class="price-label">/month</span>
+                <div class="product-galerry row">
+                    <div id="product-slider" class="col-md-9 carousel slide" data-ride="carousel">
+                        <div class="content_slider">
+                            <div class="content_slider-item">
+                                <img src="./images/slider1.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/slider2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/slider3.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/slider4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./images/slider5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img_control">
+                            <div class="item-control">
+                                <img src="./images/slider1.jpg" alt="">
+                            </div>
+                            <div class="item-control">
+                                <img src="./images/slider2.jpg" alt="">
+                            </div>
+                            <div class="item-control">
+                                <img src="./images/slider3.jpg" alt="">
+                            </div>
+                            <div class="item-control">
+                                <img src="./images/slider4.jpg" alt="">
+                            </div>
+                            <div class="item-control">
+                                <img src="./images/slider5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 contact-form">
+                        <div class="slider_agent_image"
+                            style="background-image:url('images/Real-Estate-Agent-3-1-525x350.jpg')">
+                        </div>
+                        <h1 class="title_agent_slider font-weight-bold">
+                            <a href="https://milano.wpestatetheme.org/agents/laura-comaco/">Laura
+                                Comaco
+                            </a>
+                        </h1>
+                        <div class="agent_meta_slider"> <strong class="agent_phone">Phone: </strong>(305)
+                            555-4555<br><strong class="agent_email">Email: </strong>Laura@wpestatetheme.org
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-galerry row">
-                <div id="product-slider" class="col-md-9 carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#product-slider" data-slide-to="0" class="active"></li>
-                        <li data-target="#product-slider" data-slide-to="1"></li>
-                        <li data-target="#product-slider" data-slide-to="2"></li>
+                <div class="prop_title_zone_menu">
+                    <ul class="property_menu">
+                        <li><a class="" href="#property_description_title">Description</a></li>
+                        <li><a class="" href="#property_address_title">Address</a></li>
+                        <li><a class="" href="#prop_details_title">Details</a></li>
+                        <li><a class="" href="#prop_ame_title">Features</a></li>
+                        <li><a class="" href="#prop_map_title">Map</a></li>
+                        <li><a class="" href="#prop_video">Video</a></li>
+                        <li><a class="" href="#prop_floor_title">Floor Plans</a></li>
+                        <li><a class="" href="#prop_stat_title">Statistics</a></li>
+                        <li><a class="" href="#prop_simialar_list">Similar Listings</a></li>
                     </ul>
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://milano.b-cdn.net/wp-content/uploads/2014/05/rendering_pz4udd-3-835x540.jpg"
-                                alt="Los Angeles">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://milano.b-cdn.net/wp-content/uploads/2014/05/kingston-university-7534591-2-835x540.jpg"
-                                alt="Chicago">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://milano.b-cdn.net/wp-content/uploads/2014/05/living-room-best-design-2015-ideas-wooden-flooring-white-fur-rug-beautiful-wall-theme-white-curtains-amazing-ceiling-light-living-room-decor-ideas-2015-design-835x540.jpg"
-                                alt="New York">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#product-slider" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#product-slider" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
                 </div>
-                <div class="col-md-3 contact-form">
-                    <div class="slider_agent_image"
-                        style="background-image:url('images/Real-Estate-Agent-3-1-525x350.jpg')">
-                    </div>
-                    <h1 class="title_agent_slider font-weight-bold">
-                        <a href="https://milano.wpestatetheme.org/agents/laura-comaco/">Laura
-                            Comaco
-                        </a>
-                    </h1>
-                    <div class="agent_meta_slider"> <strong class="agent_phone">Phone: </strong>(305)
-                        555-4555<br><strong class="agent_email">Email: </strong>Laura@wpestatetheme.org
-                    </div>
-                </div>
-            </div>
-            <div class="prop_title_zone_menu">
-                <ul class="property_menu">
-                    <li><a class="" href="#property_description_title">Description</a></li>
-                    <li><a class="" href="#property_address_title">Address</a></li>
-                    <li><a class="" href="#prop_details_title">Details</a></li>
-                    <li><a class="" href="#prop_ame_title">Features</a></li>
-                    <li><a class="" href="#prop_map_title">Map</a></li>
-                    <li><a class="" href="#prop_video">Video</a></li>
-                    <li><a class="" href="#prop_floor_title">Floor Plans</a></li>
-                    <li><a class="" href="#prop_stat_title">Statistics</a></li>
-                    <li><a class="" href="#prop_simialar_list">Similar Listings</a></li>
-                </ul>
             </div>
         </div>
-
         <div class="detail-info d-flex">
-            <div class="content-main col-md-9">
-                <div class="description-area wrapper_content" id="property_description_title">
-                    <h4 id="property_description_title">PROPERTY DESCRIPTION Test</h4>
-                    <p>Top location for local entertainment. All fixtures are included. Liquor license can be included.
-                        Price includes 3 leased apartments on the second floor income $2,200 per month.</p>
-                    <p>Free standing built out restaurant with separate dining/banquet room. Spacious outdoor dining
-                        deck. Large commercial kitchen fully equipped. Seating capacity over 200 with large event area
-                        with stage and movable dance floor. This opportunity is perfect for investor or owner operator.
-                        Keep existing concept or introduce your own.</p>
-                </div>
-                <div class="panel-group property-panel acodion-item" id="accordion_prop_addr">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion_prop_addr"
-                                href="#prop_addr" aria-expanded="false" class="collapsed">
-                                <h4 id="property_address_title" class="panel-title carusel_closed"> Address
-                                    <i class="fas fa-angle-down d-none"></i> 
-                                    <i class="fas fa-angle-up"></i> 
-                                </h4>
-                            </a></div>
-                        <div id="prop_addr" class="panel-collapse collapse show" aria-expanded="false" style="height: auto;">
-                            <div class="panel-body row">
-                                <div class="listing_detail col-md-4"><strong>Address:</strong> Piazza Cordusio</div>
-                                <div class="listing_detail col-md-4"><strong>City:</strong> <a
-                                        href="https://milano.wpestatetheme.org/city/milano/" rel="tag">Milano</a></div>
-                                <div class="listing_detail col-md-4"><strong>Area:</strong> <a
-                                        href="https://milano.wpestatetheme.org/area/navigli/" rel="tag">Navigli</a>
+            <div class="container">
+                <div class="row">
+                    <div class="content-main col-md-9">
+                        <div class="description-area wrapper_content" id="property_description_title">
+                            <h4 id="property_description_title">PROPERTY DESCRIPTION Test</h4>
+                            <p>Top location for local entertainment. All fixtures are included. Liquor license can be
+                                included.
+                                Price includes 3 leased apartments on the second floor income $2,200 per month.</p>
+                            <p>Free standing built out restaurant with separate dining/banquet room. Spacious outdoor
+                                dining
+                                deck. Large commercial kitchen fully equipped. Seating capacity over 200 with large
+                                event
+                                area
+                                with stage and movable dance floor. This opportunity is perfect for investor or owner
+                                operator.
+                                Keep existing concept or introduce your own.</p>
+                        </div>
+                        <div class="panel-group property-panel acodion-item" id="accordion_prop_addr">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion_prop_addr"
+                                        href="#prop_addr" aria-expanded="false" class="collapsed">
+                                        <h4 id="property_address_title" class="panel-title carusel_closed"> Address
+                                            <i class="fas fa-angle-down d-none"></i>
+                                            <i class="fas fa-angle-up"></i>
+                                        </h4>
+                                    </a></div>
+                                <div id="prop_addr" class="panel-collapse collapse show" aria-expanded="false"
+                                    style="height: auto;">
+                                    <div class="panel-body row">
+                                        <div class="listing_detail col-md-4"><strong>Address:</strong> Piazza Cordusio
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>City:</strong> <a
+                                                href="https://milano.wpestatetheme.org/city/milano/"
+                                                rel="tag">Milano</a>
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>Area:</strong> <a
+                                                href="https://milano.wpestatetheme.org/area/navigli/"
+                                                rel="tag">Navigli</a>
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>Zip:</strong> 20123</div>
+                                        <div class="listing_detail col-md-4"><strong>Country:</strong> Italy</div>
+                                    </div>
                                 </div>
-                                <div class="listing_detail col-md-4"><strong>Zip:</strong> 20123</div>
-                                <div class="listing_detail col-md-4"><strong>Country:</strong> Italy</div>
+                            </div>
+                        </div>
+                        <div class="panel-group property-panel acodion-item" id="accordion_prop_detail">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"> <a data-toggle="collapse"
+                                        data-parent="#accordion_prop_detail" href="#prop_detail" aria-expanded="false"
+                                        class="collapsed">
+                                        <h4 id="prop_details_title" class="panel-title carusel_closed"> Details
+                                            <i class="fas fa-angle-down d-none"></i>
+                                            <i class="fas fa-angle-up"></i>
+                                        </h4>
+                                    </a></div>
+                                <div id="prop_detail" class="panel-collapse collapse show" aria-expanded="false"
+                                    style="height: auto;">
+                                    <div class="panel-body row">
+                                        <div class="listing_detail col-md-4" id="propertyid_display"><strong>Property
+                                                Id:</strong> 154</div>
+                                        <div class="listing_detail col-md-4"><strong>Price:</strong> <span
+                                                class="price_label price_label_before"></span> € 1,500,000 <span
+                                                class="price_label"></span>
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>Property Size:</strong> 700
+                                            ft<sup>2</sup>
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>Property Lot Size:</strong> 850
+                                            ft<sup>2</sup></div>
+                                        <div class="listing_detail col-md-4"><strong>Rooms:</strong> 5</div>
+                                        <div class="listing_detail col-md-4"><strong>Bedrooms:</strong> 2</div>
+                                        <div class="listing_detail col-md-4"><strong>Bathrooms:</strong> 2</div>
+                                        <div class="listing_detail col-md-4"><strong>Custom ID:</strong> 123</div>
+                                        <div class="listing_detail col-md-4"><strong>Year Built:</strong> 2015</div>
+                                        <div class="listing_detail col-md-4"><strong>Garages:</strong> yes</div>
+                                        <div class="listing_detail col-md-4"><strong>Garage Size:</strong> 4 cars</div>
+                                        <div class="listing_detail col-md-4"><strong>Available From:</strong> 2018-05-15
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>Basement:</strong> no</div>
+                                        <div class="listing_detail col-md-4"><strong>External Construction:</strong> yes
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>Exterior Material:</strong> bricks
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>Roofing:</strong> new</div>
+                                        <div class="listing_detail col-md-4"><strong>Structure Type:</strong> brick
+                                        </div>
+                                        <div class="listing_detail col-md-4"><strong>Floors No:</strong> 3</div>
+                                        <div class="listing_detail col-md-4"><strong>View:</strong> Ocean</div>
+                                        <div class="listing_detail col-md-4"><strong>Ownership:</strong> Condo/Strata
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group property-panel acodion-item" id="accordion_prop_features">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"> <a data-toggle="collapse"
+                                        data-parent="#accordion_prop_features" href="#prop_ame" aria-expanded="false"
+                                        class="collapsed">
+                                        <h4 id="prop_ame_title" class="panel-title carusel_closed"> FEATURES
+                                            <i class="fas fa-angle-down d-none"></i>
+                                            <i class="fas fa-angle-up"></i>
+                                        </h4>
+                                    </a></div>
+                                <div id="prop_ame" class="panel-collapse collapse show" aria-expanded="false"
+                                    style="height: auto;">
+                                    <div class="panel-body row">
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>attic</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>gas heat</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>wine cellar
+                                        </div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>pound</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>fireplace</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>lake view</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>back yard</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>fenced yard
+                                        </div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>sprinklers
+                                        </div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>washer and
+                                            dryer</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>deck</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>balcony</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>laundry</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>concierge</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>doorman</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>private space
+                                        </div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>storage</div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>recreation
+                                        </div>
+                                        <div class="listing_detail col-md-4"><i class="fas fa-check"></i>Roof Deck</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="panel-group property-panel acodion-item" id="accordion_prop_detail">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion_prop_detail"
-                                href="#prop_detail" aria-expanded="false" class="collapsed">
-                                <h4 id="prop_details_title" class="panel-title carusel_closed"> Details
-                                    <i class="fas fa-angle-down d-none"></i> 
-                                    <i class="fas fa-angle-up"></i> 
-                                </h4>
-                            </a></div>
-                        <div id="prop_detail" class="panel-collapse collapse show" aria-expanded="false"
-                            style="height: auto;">
-                            <div class="panel-body row">
-                                <div class="listing_detail col-md-4" id="propertyid_display"><strong>Property
-                                        Id:</strong> 154</div>
-                                <div class="listing_detail col-md-4"><strong>Price:</strong> <span
-                                        class="price_label price_label_before"></span> € 1,500,000 <span
-                                        class="price_label"></span></div>
-                                <div class="listing_detail col-md-4"><strong>Property Size:</strong> 700 ft<sup>2</sup>
-                                </div>
-                                <div class="listing_detail col-md-4"><strong>Property Lot Size:</strong> 850
-                                    ft<sup>2</sup></div>
-                                <div class="listing_detail col-md-4"><strong>Rooms:</strong> 5</div>
-                                <div class="listing_detail col-md-4"><strong>Bedrooms:</strong> 2</div>
-                                <div class="listing_detail col-md-4"><strong>Bathrooms:</strong> 2</div>
-                                <div class="listing_detail col-md-4"><strong>Custom ID:</strong> 123</div>
-                                <div class="listing_detail col-md-4"><strong>Year Built:</strong> 2015</div>
-                                <div class="listing_detail col-md-4"><strong>Garages:</strong> yes</div>
-                                <div class="listing_detail col-md-4"><strong>Garage Size:</strong> 4 cars</div>
-                                <div class="listing_detail col-md-4"><strong>Available From:</strong> 2018-05-15</div>
-                                <div class="listing_detail col-md-4"><strong>Basement:</strong> no</div>
-                                <div class="listing_detail col-md-4"><strong>External Construction:</strong> yes</div>
-                                <div class="listing_detail col-md-4"><strong>Exterior Material:</strong> bricks</div>
-                                <div class="listing_detail col-md-4"><strong>Roofing:</strong> new</div>
-                                <div class="listing_detail col-md-4"><strong>Structure Type:</strong> brick</div>
-                                <div class="listing_detail col-md-4"><strong>Floors No:</strong> 3</div>
-                                <div class="listing_detail col-md-4"><strong>View:</strong> Ocean</div>
-                                <div class="listing_detail col-md-4"><strong>Ownership:</strong> Condo/Strata</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-group property-panel acodion-item" id="accordion_prop_features">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion_prop_features"
-                                href="#prop_ame" aria-expanded="false" class="collapsed">
-                                <h4 id="prop_ame_title" class="panel-title carusel_closed"> FEATURES
-                                    <i class="fas fa-angle-down d-none"></i> 
-                                    <i class="fas fa-angle-up"></i> 
-                                </h4>
-                            </a></div>
-                        <div id="prop_ame" class="panel-collapse collapse show" aria-expanded="false" style="height: auto;">
-                            <div class="panel-body row">
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>attic</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>gas heat</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>wine cellar
-                                </div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>pound</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>fireplace</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>lake view</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>back yard</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>fenced yard
-                                </div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>sprinklers
-                                </div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>washer and
-                                    dryer</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>deck</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>balcony</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>laundry</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>concierge</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>doorman</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>private space
-                                </div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>storage</div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>recreation
-                                </div>
-                                <div class="listing_detail col-md-4"><i class="fas fa-check"></i>Roof Deck</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="sidebar-product-detai col-md-3">
-                <div id="list-social" class="social_sidebar">
-                    <h3 class="widget-title-sidebar">Social Links:</h3>
-                    <div class="social_sidebar_internal">
-                        <a href="#" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="fa fa-google"></i>
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank">
-                            <i class="fa fa-pinterest"></i>
-                        </a>
+                    <div class="sidebar-product-detai col-md-3">
+                        <div id="list-social" class="social_sidebar">
+                            <h3 class="widget-title-sidebar">Social Links:</h3>
+                            <div class="social_sidebar_internal">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="main.js"></script>
 </body>
 
