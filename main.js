@@ -47,3 +47,14 @@ $(".img_control").slick({
   asNavFor: ".content_slider",
   focusOnSelect: true,
 });
+// Show hide arrow up-down
+$('.panel-heading').click(function(){
+  if($(this).find('.fa-angle-down').hasClass('d-none')){
+    $(this).find('.fa-angle-down').removeClass('d-none');
+    $(this).find('.fa-angle-up').addClass('d-none');
+  }
+  else{
+    $(this).find('.fa-angle-up').removeClass('d-none');
+    $(this).find('.fa-angle-down').addClass('d-none');
+  }
+});
