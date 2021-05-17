@@ -58,3 +58,13 @@ $('.panel-heading').click(function(){
     $(this).find('.fa-angle-down').addClass('d-none');
   }
 });
+// Add value to search 
+$('.filter_menu li').click(function(){
+  var self = $(this);
+  var value = $(self).attr('data-value');
+  var text = $(self).text();
+  var optionInput = $(self).parents('.input-group-prepend').find('.option-search');  
+  var showInput = $(self).parents('.input-group-prepend').find('.filter_menu_trigger'); 
+  showInput.text(text); 
+  optionInput.attr('value',value);
+});
